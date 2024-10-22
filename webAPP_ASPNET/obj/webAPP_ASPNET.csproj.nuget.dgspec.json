@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jean Pasquini\\source\\repos\\webAPP_ASPNET\\webAPP_ASPNET.csproj": {}
+    "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\webAPP_ASPNET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jean Pasquini\\source\\repos\\webAPP_ASPNET\\webAPP_ASPNET.csproj": {
+    "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\webAPP_ASPNET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jean Pasquini\\source\\repos\\webAPP_ASPNET\\webAPP_ASPNET.csproj",
+        "projectUniqueName": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\webAPP_ASPNET.csproj",
         "projectName": "webAPP_ASPNET",
-        "projectPath": "C:\\Users\\Jean Pasquini\\source\\repos\\webAPP_ASPNET\\webAPP_ASPNET.csproj",
+        "projectPath": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\webAPP_ASPNET.csproj",
         "packagesPath": "C:\\Users\\Jean Pasquini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jean Pasquini\\source\\repos\\webAPP_ASPNET\\obj\\",
+        "outputPath": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"

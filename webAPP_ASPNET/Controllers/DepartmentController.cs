@@ -61,19 +61,15 @@ namespace webAPP_ASPNET.Controllers
         public async Task<ActionResult> Edit(int id)
         {
             var client = CreateHttpClient();
-            string url = $"User/Department/{id}";
+            string url = $"Department/{id}";
             HttpResponseMessage getData = await client.GetAsync(url);
 
             if (getData.IsSuccessStatusCode)
             {
                 var jsonResponse = await getData.Content.ReadAsStringAsync();
-                var user = JsonConvert.DeserializeObject<UserWithDepartment>(jsonResponse);
+                var department = JsonConvert.DeserializeObject<Department>(jsonResponse);
 
-                ViewBag.RelationId = user.DepartmentRelation?.ID;
-                ViewBag.SelectedDepartmentId = user.Department?.ID;
-                ViewBag.SelectedDepartmentName = user.Department?.DEPARTMENTNAME;
-
-                return View(user);
+                return View(department);
             }
             else
             {
@@ -82,72 +78,41 @@ namespace webAPP_ASPNET.Controllers
             return View();
         }
 
-
-
-
         [HttpPost]
-        public async Task<ActionResult> Put(UserWithDepartment userModel)
+        public async Task<ActionResult> Put(Department departmentModel)
         {
             var client = CreateHttpClient();
-            var jsonContent = new StringContent(JsonConvert.SerializeObject(userModel.User), System.Text.Encoding.UTF8, "application/json");
-            string url = $"User/{userModel.User.ID}";
-            HttpResponseMessage putDataUser = await client.PutAsync(url, jsonContent);
+            var jsonContent = new StringContent(JsonConvert.SerializeObject(departmentModel), System.Text.Encoding.UTF8, "application/json");
+            string url = $"Department/{departmentModel.ID}";
+            HttpResponseMessage putDataDepartment = await client.PutAsync(url, jsonContent);
 
-            if (putDataUser.IsSuccessStatusCode)
+            if (putDataDepartment.IsSuccessStatusCode)
             {
-                DepartmentRelation departmentRelation = new DepartmentRelation
-                {
-                    IDDEPARTMENT = userModel.DepartmentRelation.IDDEPARTMENT,
-                    IDUSER = userModel.User.ID
-                };
-                var jsonContentDepartment = new StringContent(JsonConvert.SerializeObject(departmentRelation), System.Text.Encoding.UTF8, "application/json");
-
-                string urlDepartment = $"DepartmentRelation/{userModel.DepartmentRelation.ID}";
-                HttpResponseMessage putDataDepartment = await client.PutAsync(urlDepartment, jsonContentDepartment);
-
-                if (putDataDepartment.IsSuccessStatusCode)
-                {
-                    return RedirectToAction(nameof(Index));
-                }
+                return RedirectToAction(nameof(Index));
             }
-            return View(userModel);
+            return View(departmentModel);
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post(UserWithDepartment userModel)
+        public async Task<ActionResult> Post(Department departmentModel)
         {
             var client = CreateHttpClient();
-            var jsonContentUser = new StringContent(JsonConvert.SerializeObject(userModel.User), System.Text.Encoding.UTF8, "application/json");
-            string url = $"User";
-            HttpResponseMessage postDataUser = await client.PostAsync(url, jsonContentUser);
+            var jsonContentUser = new StringContent(JsonConvert.SerializeObject(departmentModel), System.Text.Encoding.UTF8, "application/json");
+            string url = $"Department";
+            HttpResponseMessage postDataDepartment = await client.PostAsync(url, jsonContentUser);
 
-            if (postDataUser.IsSuccessStatusCode)
+            if (postDataDepartment.IsSuccessStatusCode)
             {
-                var jsonResponse = await postDataUser.Content.ReadAsStringAsync();
-                var user = JsonConvert.DeserializeObject<User>(jsonResponse);
-                DepartmentRelation departmentRelation = new DepartmentRelation
-                {
-                    IDDEPARTMENT = userModel.Department.ID,
-                    IDUSER = user.ID
-                };
-                var jsonContentDepartment = new StringContent(JsonConvert.SerializeObject(departmentRelation), System.Text.Encoding.UTF8, "application/json");
-
-                string urlDepartment = $"DepartmentRelation";
-                HttpResponseMessage postDataDepartment = await client.PostAsync(urlDepartment, jsonContentDepartment);
-
-                if (postDataDepartment.IsSuccessStatusCode)
-                {
-                    return RedirectToAction(nameof(Index));
-                }
+                return RedirectToAction(nameof(Index));
             }
-            return View(userModel);
+            return View(departmentModel);
         }
 
         [HttpPost]
         public async Task<ActionResult> Delete(int id)
         {
             var client = CreateHttpClient();
-            string url = $"User/{id}";
+            string url = $"Department/{id}";
             HttpResponseMessage deleteData = await client.DeleteAsync(url);
 
             if (deleteData.IsSuccessStatusCode)

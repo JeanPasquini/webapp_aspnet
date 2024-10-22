@@ -4,6 +4,7 @@
     {
         public int ID { get; set; }
         public string DEPARTMENTNAME { get; set; }
+        public string DESCRIPTION { get; set; }
     }
 
     public class DepartmentRelation

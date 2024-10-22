@@ -14,6 +14,7 @@
 
             <input type="hidden" asp-for="User.ID" />
             <input type="hidden" asp-for="DepartmentRelation.ID" value="@ViewBag.RelationId" />
+            <input type="hidden" asp-for="Department.DEPARTMENTNAME" value="@ViewBag.SelectedDepartmentName" />
 
             <div class="form-group">
                 <label asp-for="User.USERNAME" class="control-label"></label>

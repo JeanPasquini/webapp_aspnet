@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K/KGljXRFqw=",
+  "dgSpecHash": "4TioN2G0ALo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jean Pasquini\\source\\repos\\webAPP_ASPNET\\webAPP_ASPNET.csproj",
+  "projectFilePath": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\webAPP_ASPNET.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jean Pasquini\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Jean Pasquini\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
