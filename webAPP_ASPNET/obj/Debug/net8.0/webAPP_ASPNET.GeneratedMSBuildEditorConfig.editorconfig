@@ -26,6 +26,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Jean Pasquini\Documents\GitHub\webapp_aspnet\webAPP_ASPNET
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Jean Pasquini/Documents/GitHub/webapp_aspnet/webAPP_ASPNET/Views/ButtonRelation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uUmVsYXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jean Pasquini/Documents/GitHub/webapp_aspnet/webAPP_ASPNET/Views/ButtonRelation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uUmVsYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jean Pasquini/Documents/GitHub/webapp_aspnet/webAPP_ASPNET/Views/ButtonRelation/ListRelation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uUmVsYXRpb25cTGlzdFJlbGF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jean Pasquini/Documents/GitHub/webapp_aspnet/webAPP_ASPNET/Views/Button/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jean Pasquini/Documents/GitHub/webapp_aspnet/webAPP_ASPNET/Views/Button/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jean Pasquini/Documents/GitHub/webapp_aspnet/webAPP_ASPNET/Views/Button/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV0dG9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Jean Pasquini/Documents/GitHub/webapp_aspnet/webAPP_ASPNET/Views/Department/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

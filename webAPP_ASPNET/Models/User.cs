@@ -15,6 +15,13 @@
         public Department Department { get; set; }
     }
 
+    public class UserWithButton
+    {
+        public User User { get; set; }
+        public ButtonRelation ButtonRelation { get; set; }
+        public Button Button { get; set; }
+    }
+
     public static class LoggedUser
     {
         public static User User { get; set; } = new User();

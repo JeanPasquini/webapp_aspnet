@@ -1,0 +1,37 @@
+﻿@using System.Data
+@using System.Globalization
+
+@model DataTable;
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<div class="">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayName("ID")</th>
+                <th>@Html.DisplayName("USERNAME")</th>
+                <th>@Html.DisplayName("FULLNAME")</th>
+                <th>@Html.DisplayName("DEPARTMENT")</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DataRow row in Model.Rows)
+            {
+                <tr>
+                    <td>@row["ID"]</td>
+                    <td>@row["USERNAME"]</td>
+                    <td>@row["FULLNAME"]</td>
+                    <td>@row["DEPARTMENTNAME"]</td>
+                    <td>
+                        <a href="@Url.Action("ListRelation", "ButtonRelation", new { id = row["ID"] })" class="btn btn-primary">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

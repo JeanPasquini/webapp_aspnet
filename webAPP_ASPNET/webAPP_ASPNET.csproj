@@ -15,9 +15,4 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Button\" />
-    <Folder Include="Views\ButtonRelation\" />
-  </ItemGroup>
-
 </Project>

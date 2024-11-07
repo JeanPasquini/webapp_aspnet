@@ -1,0 +1,33 @@
+﻿@model webAPP_ASPNET.Models.ButtonRelation
+
+<h4>User: @ViewBag.Username</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Post" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IDUSER" class="control-label"></label>
+                <input asp-for="IDUSER" class="form-control" readonly />
+                <span asp-validation-for="IDUSER" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="" class="control-label">Button</label>
+                <select id="IDBUTTON" name="IDBUTTON" class="form-control" required asp-items="ViewBag.Buttons">
+                    <option value="">Select a Button</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
