@@ -1,4 +1,5 @@
-﻿using System.Net.Http.Headers;
+﻿using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System.Net.Http.Headers;
 
 namespace webAPP_ASPNET
 {
@@ -16,6 +17,7 @@ namespace webAPP_ASPNET
         {
             services.AddControllersWithViews();
             services.AddDistributedMemoryCache();
+            services.AddSingleton<ITempDataProvider, SessionStateTempDataProvider>();
             services.AddSession(options =>
             {
                 options.Cookie.Name = "Session";
@@ -30,6 +32,8 @@ namespace webAPP_ASPNET
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             });
+
+
         }
 
 

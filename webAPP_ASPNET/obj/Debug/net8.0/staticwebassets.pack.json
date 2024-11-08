@@ -245,6 +245,26 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\wwwroot\\resources\\cube_32x32.png",
+      "PackagePath": "staticwebassets\\resources\\cube_32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\wwwroot\\resources\\hexagonos-03.png",
+      "PackagePath": "staticwebassets\\resources\\hexagonos-03.png"
+    },
+    {
+      "Id": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\wwwroot\\resources\\image1.png",
+      "PackagePath": "staticwebassets\\resources\\image1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\wwwroot\\resources\\image2.png",
+      "PackagePath": "staticwebassets\\resources\\image2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\wwwroot\\resources\\image3.png",
+      "PackagePath": "staticwebassets\\resources\\image3.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.webAPP_ASPNET.props",
       "PackagePath": "build\\webAPP_ASPNET.props"
     },

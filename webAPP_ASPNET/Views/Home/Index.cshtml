@@ -2,8 +2,90 @@
     ViewData["Title"] = "Home Page";
     Layout = "_Layout";
 }
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<style>
+    .card-container {
+        overflow: hidden;
+        transition: transform 0.4s ease;
+    }
+        .card-container:hover {
+            transform: scale(1.1);
+            z-index: 0;
+        }
+    .card {
+        height: 100%;
+        transition: transform 0.4s ease;
+    }
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+    .card-body {
+        transition: transform 0.4s ease;
+    }
+    .card-title {
+        font-weight: bold;
+    }
+</style>
+<header class="bg-primary text-white text-center py-5">
+    <h1 class="display-4">Welcome the Connection .NET</h1>
+    <p class="lead">Explore my .NET projects and more on GitHub.</p>
+    <a href="https://github.com/JeanPasquini" class="btn btn-outline-light btn-lg m-2" target="_blank">Visit My GitHub</a>
+    <a href="https://www.linkedin.com/in/jeanpasquini/" class="btn btn-outline-light btn-lg m-2" target="_blank">Connect on LinkedIn</a>
+</header>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="container my-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Featured Projects</h2>
+        <p class="text-muted">Discover more about my work with .NET and Connection .NET.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card-container">
+                <div class="card">
+                    <img src="~/resources/image1.png" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">API Connection .NET - ASP.NET</h5>
+                        <p class="card-text">This project aims to complete the running application by creating the necessary routes to perform all actions and ensure the website's security. You will find more information and details there to learn more about my development work.</p>
+                        <a href="https://github.com/JeanPasquini/webapi_aspnet" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card-container">
+                <div class="card">
+                    <img src="~/resources/image2.png" class="card-img-top" alt="Project 2 Image">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Connection .NET - Application</h5>
+                        <p class="card-text">Creation of the same application, but in software format, containing the same features, though running on the .NET framework for Windows. More details are available in the GitHub repository.</p>
+                        <a href="https://github.com/JeanPasquini/app_net_framework" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card-container">
+                <div class="card">
+                    <img src="~/resources/image3.png" class="card-img-top" alt="Project 3 Image">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Traffic Sign Detector - ML.NET</h5>
+                        <p class="card-text">A project aimed at studying machine learning for traffic sign recognition, where a simple photo can identify which sign it refers to. For more details on how the project was implemented, visit the repository.</p>
+                        <a href="https://github.com/JeanPasquini/webapp_mlnet" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

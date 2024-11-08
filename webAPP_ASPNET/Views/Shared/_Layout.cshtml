@@ -7,42 +7,103 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/webAPP_ASPNET.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+    <style>
+
+        title {
+            color: darkmagenta;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(139, 0, 139, 0.8);
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">webAPP_ASPNET</a>
+                <a class="navbar-brand title" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/resources/cube_32x32.png" /> Connection .NET
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    <ul class="navbar-nav flex-grow-1 gap-3">
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" data-bs-toggle="tooltip" data-bs-placement="right" title="Home">
+                                <i class="fas fa-home"></i>
+                            </a>
                         </li>
-                        @{ if (LoggedUser.Department.ID == 1){
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Administration
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Users</a></li>
-                                        <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="ButtonRelation" asp-action="Index">Button Permission</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="Department" asp-action="Index">Departments</a></li>
-                                        <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="Button" asp-action="Index">Buttons</a></li>
-                                        <li><a class="dropdown-item" href="#">...</a></li>
-                                        
-                                    </ul>
-                                </li>
-                            }   
-                        }
+                        <li class="nav-item dropdown" data-bs-toggle="tooltip" data-bs-placement="right" title="Register">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-tags" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index"><i class="fa fa-cube" aria-hidden="true"></i> Product</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        @{
+                            if (LoggedUser.Department.ID == 1)
+                            {
+                                <li class="nav-item dropdown" data-bs-toggle="tooltip" data-bs-placement="right" title="Admin">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-child"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index"><i class="fa fa-users" aria-hidden="true"></i> Users</a></li>
+                                        <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="ButtonRelation" asp-action="Index"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Button Permission</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="Department" asp-action="Index"><i class="fa fa-briefcase" aria-hidden="true"></i> Departments</a></li>
+                                        <li class="dropdown-item"><a class="nav-link text-dark" asp-area="" asp-controller="Button" asp-action="Index"><i class="fa fa-plus-circle" aria-hidden="true"></i> Buttons</a></li>
+                                    </ul>
+                                </li>
+                            }
+                        }
                     </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown" title="Admin">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user me-2"></i> @LoggedUser.User.USERNAME
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end p-3">
+                                <li class="mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-user me-2"></i>
+                                        <span>@LoggedUser.User.FULLNAME</span>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-building me-2"></i>
+                                        <span>@LoggedUser.Department.DEPARTMENTNAME</span>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-envelope me-2"></i>
+                                        <span>@LoggedUser.User.EMAIL</span>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="dropdown-item d-flex justify-content-center">
+                                    <a class="nav-link text-dark d-flex align-items-center" asp-area="" asp-controller="Login" asp-action="Logout" data-bs-toggle="tooltip" title="Logout">
+                                        <i class="fas fa-sign-out-alt me-2"></i> Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
                 </div>
             </div>
         </nav>
@@ -53,9 +114,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer">
         <div class="container">
-            &copy; 2024 - webAPP_ASPNET - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - Connection .NET by Jean Pasquini
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -17,6 +17,11 @@ namespace webAPP_ASPNET.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetString("ErrorMessage") != null)
+            {
+                TempData["ErrorMessage"] = HttpContext.Session.GetString("ErrorMessage");
+                HttpContext.Session.Remove("ErrorMessage");
+            }
             return View();
         }
 

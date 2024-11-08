@@ -68,6 +68,7 @@ namespace webAPP_ASPNET.Controllers
                         var user = JsonConvert.DeserializeObject<UserWithDepartment>(responseContent2);
                         LoggedUser.User.ID = user.User.ID;
                         LoggedUser.User.FULLNAME = user.User.FULLNAME;
+                        LoggedUser.User.USERNAME = user.User.USERNAME;
                         LoggedUser.User.EMAIL = user.User.EMAIL;
                         LoggedUser.Department.ID = user.Department.ID;
                         LoggedUser.Department.DEPARTMENTNAME = user.Department.DEPARTMENTNAME;
