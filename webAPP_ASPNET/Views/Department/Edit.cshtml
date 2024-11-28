@@ -6,11 +6,7 @@
     <div class="col-md-4">
         <form asp-action="Put" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="ID" class="control-label"></label>
-                <input asp-for="ID" class="form-control" />
-                <span asp-validation-for="ID" class="text-danger"></span>
-            </div>
+            <input type="hidden" asp-for="ID" class="form-control" />
             <div class="form-group">
                 <label asp-for="DEPARTMENTNAME" class="control-label"></label>
                 <input asp-for="DEPARTMENTNAME" class="form-control" />
@@ -21,15 +17,16 @@
                 <input asp-for="DESCRIPTION" class="form-control" />
                 <span asp-validation-for="DESCRIPTION" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group mt-1">
+                <a asp-action="Index" class="btn btn-primary">
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                </a>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-edit" aria-hidden="true"></i> Edit
+                </button>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

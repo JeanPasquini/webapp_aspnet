@@ -7,9 +7,9 @@
     ViewData["Title"] = "Home Page";
     Layout = "_Layout";
 }
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<a asp-action="Create" class="btn btn-success mt-1">
+    <i class="fa fa-plus-circle" aria-hidden="true"></i> Create New
+</a>
 <table class="table">
     <thead>
         <tr>
@@ -32,10 +32,10 @@
             <td>@row["BUTTONNAME"]</td>
             <td>@row["DESCRIPTION"]</td>
                 <td>
-                    <a href="@Url.Action("Edit", "Button", new { id = row["ID"] })" class="btn btn-primary">Edit</a>
+                    <a href="@Url.Action("Edit", "Button", new { id = row["ID"] })" class="btn btn-primary"><i class="fa fa-edit"></i> Edit</a>
                     <form action="@Url.Action("Delete", "Button", new { id = row["ID"] })" method="post" style="display:inline;">
                         <input type="hidden" name="_method" value="Delete" />
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this user?');">Delete</button>
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this Button?');"><i class="fa fa-trash"></i> Delete</button>
                     </form>
                 </td>
         </tr>

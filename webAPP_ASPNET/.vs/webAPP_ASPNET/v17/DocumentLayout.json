@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F686F538-A358-4B3E-8E75-AEED53D1DF65}|webAPP_ASPNET.csproj|c:\\users\\jean pasquini\\documents\\github\\webapp_aspnet\\webapp_aspnet\\views\\button\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F686F538-A358-4B3E-8E75-AEED53D1DF65}|webAPP_ASPNET.csproj|solutionrelative:views\\button\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F686F538-A358-4B3E-8E75-AEED53D1DF65}|webAPP_ASPNET.csproj|c:\\users\\jean pasquini\\documents\\github\\webapp_aspnet\\webapp_aspnet\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F686F538-A358-4B3E-8E75-AEED53D1DF65}|webAPP_ASPNET.csproj|solutionrelative:views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F686F538-A358-4B3E-8E75-AEED53D1DF65}|webAPP_ASPNET.csproj|c:\\users\\jean pasquini\\documents\\github\\webapp_aspnet\\webapp_aspnet\\views\\button\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F686F538-A358-4B3E-8E75-AEED53D1DF65}|webAPP_ASPNET.csproj|solutionrelative:views\\button\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F686F538-A358-4B3E-8E75-AEED53D1DF65}|webAPP_ASPNET.csproj|c:\\users\\jean pasquini\\documents\\github\\webapp_aspnet\\webapp_aspnet\\views\\button\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F686F538-A358-4B3E-8E75-AEED53D1DF65}|webAPP_ASPNET.csproj|solutionrelative:views\\button\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\Views\\Button\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Button\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\Views\\Button\\Create.cshtml",
+              "RelativeToolTip": "Views\\Button\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T13:53:17.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "Views\\User\\Create.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T13:53:10.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\Views\\Button\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Button\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\Views\\Button\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Button\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T13:52:53.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\Views\\Button\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Button\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Jean Pasquini\\Documents\\GitHub\\webapp_aspnet\\webAPP_ASPNET\\Views\\Button\\Index.cshtml",
+              "RelativeToolTip": "Views\\Button\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T13:52:12.044Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
