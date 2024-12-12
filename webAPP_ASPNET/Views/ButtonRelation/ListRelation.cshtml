@@ -7,9 +7,9 @@
 }
 <h3>@ViewBag.Username</h3>
 
-<p>
-    <a asp-action="Create" asp-route-IdUser="@ViewBag.IdUser">Create New</a>
-</p>
+<a asp-action="Create" class="btn btn-success mt-1" asp-route-IdUser="@ViewBag.IdUser">
+    <i class="fa fa-plus-circle" aria-hidden="true"></i> Create New
+</a>
 
 <div class="">
     <table class="table">
@@ -31,7 +31,7 @@
                     <td>
                         <form action="@Url.Action("Delete", "ButtonRelation", new { id = row["ID"] })" method="post" style="display:inline;">
                             <input type="hidden" name="_method" value="Delete" />
-                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this user?');">Delete</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this Permission of @ViewBag.Username?');"><i class="fa fa-trash"></i> Delete</button>
                         </form>
                     </td>
                 </tr>
